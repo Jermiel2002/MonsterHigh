@@ -1,0 +1,115 @@
+/************************************************************/
+/**
+ * Université Sorbonne Paris Nord, Programmation Web
+ * Auteurs                       : Étienne André et al.
+ * Création                      : <2020
+ * Dernière modification         : 2023/02/13
+ */
+/************************************************************/
+
+body{
+    background-image: url("/images/img1.jpg");
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#mainFooter{
+    text-align: center;
+    font-size: x-small;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.monster {
+    display         : inline-block;
+    vertical-align  : top;
+    height          : 100px;
+    margin-left     : 50px;
+
+}
+
+#boitemonster {
+    width               : 200px;
+    height              : 200px;
+    margin-bottom       : 1em;
+}
+
+h1{
+    text-align: center;
+}
+
+#monster {
+    margin              : auto;
+    border-radius       : 5px;
+    background-color    : green;
+    border              : black;
+    border-width        : 20px;
+    width               : 100px;
+    height              : 100px;
+    text-align          : center;
+}
+
+#actionbox {
+    background: linear-gradient(135deg, #C4E0E5, rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border      : 1px solid rgba(255,255,0.1);/*grey*/
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    width       : 40%;
+    overflow    : auto;
+    text-align: center;
+    margin-top:10%;
+    margin-left:10%;
+}
+
+#actionbox > p {
+    margin: 0 ;
+}
+
+ul#statut {
+    display         : flex;
+    flex-direction  : row;
+    list-style      : none;
+    margin          : 0;
+    padding-right   : 7%;
+    float: right;
+
+}
+
+ul#statut li {
+    margin-left : 20px;
+}
+
+button {
+    width: 75px;
+    height: 40px;
+    background-color: deepskyblue;
+    border: 0;
+    margin-right: 8px;
+
+
+}
+.b{
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-top:10%;
+}
+.a{
+    margin-left: 40%;
+    margin-right: 40%;
+}
+h1{
+    color:white;
+}
+
+
+button:hover {
+    background-color : dodgerblue;
+}
+
