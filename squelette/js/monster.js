@@ -131,6 +131,8 @@ function logBoite(message)
     par.appendChild(texte);
     //ajouter le paragraphe au body
     ActionBox.appendChild(par);
+    //positionnement du focus sur le nouveau texte ajouté
+    ActionBox.screenTop = ActionBox.scrollHeight;
 }
 
 /*la fonction update status() affiche l'état du monstre dans la liste d'identifiant
@@ -330,6 +332,7 @@ function apparence()
         //la largeur de la bordure doit être proportionnelle au nombre d'unités d'argent.
         boite.style.borderWidth = money;
     }
+    
 
 /************************************************************/
 // Programme principal

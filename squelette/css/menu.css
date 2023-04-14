@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Poppins";
+}
+
+.content
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url("/MonsterHigh/images/img8.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perso{
+    height: 50px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.perso .left
+{
+    height: 120%;
+    width: 90%;
+    background-image: url("/MonsterHigh/images/monster-clipart-creepy-monster-4-removebg-preview.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.perso .right h1{
+    font-size: 95%;
+}

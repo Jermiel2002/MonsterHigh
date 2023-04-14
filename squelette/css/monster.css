@@ -9,7 +9,7 @@
 
 body{
     background-image: url("/MonsterHigh/images/img1.jpg");
-    background-size: 130%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -62,10 +62,11 @@ h1{
     border      : 1px solid rgba(255,255,0.1);/*grey*/
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
     width       : 50%;
-    overflow    : auto;
+    overflow: auto;
     text-align: center;
     margin-top:10%;
     margin-left:10%;
+
 }
 
 #actionbox > p {
@@ -135,5 +136,4 @@ button:hover {
 .a #kill:last-child:hover {
     background-color: hsl(0, 100%, 50%);
 }
-
 
