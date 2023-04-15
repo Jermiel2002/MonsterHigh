@@ -12,8 +12,8 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
 
+}
 
 #mainFooter{
     text-align: center;
@@ -21,8 +21,6 @@ body{
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 .monster {
