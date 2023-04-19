@@ -10,17 +10,9 @@
 body{
     background-image: url("/MonsterHigh/images/img1.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
 
-}
-
-#mainFooter{
-    text-align: center;
-    font-size: x-small;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 .monster {
@@ -32,12 +24,15 @@ body{
 }
 
 #boitemonster {
-    width               : 200px;
-    height              : 200px;
-    margin-bottom       : 1em;
+    width: 9%;
+    height: 100%;
+    margin-top: 10%;
 }
 
 h1{
+    width: 30%;
+    height: 30%;
+    padding-left: 40%;
     text-align: center;
 }
 

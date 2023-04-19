@@ -2,36 +2,121 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: "Poppins";
+    font-family: "Times New Roman";
 }
 
 .content
 {
-    height: 100vh;
+    height: 100vh; /*taille visible de l'écran*/
     width: 100%;
-    background-image: url("/MonsterHigh/images/img8.jpg");
-    background-size: cover;
+    background-image: url("/MonsterHigh/images/bg.png");
+    background-size: cover; /*pour que ça prenne bien tout l'écran*/
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; /*les élements contenus dans flex-direction seront disposé de bas en haut: verticalement*/
+    justify-content: center; /*les éléments dans content seront centrés horizontalement le long de l'axe principal*/
+    position: relative;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    margin: 10px 20px 10px 20px;
 }
 
 .perso{
-    height: 50px;
-    width: 120px;
-    display: flex;
-    align-items: center;
+    height: 90px;
+    width: 380px;
+    background-color: #334e6973;
+    display: flex;/*l'élement perso est affiché comme un element flexible auquel on peut appliquer les propriétés flexbox*/
+    align-items: center;/*pour centrer le texte; aligner verticalement les elements d'un conteneur flexible*/
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    border: 2px solid white;
 }
 
-.perso .left
-{
-    height: 120%;
-    width: 90%;
-    background-image: url("/MonsterHigh/images/monster-clipart-creepy-monster-4-removebg-preview.png");
-    background-size: 80%;
+.perso:hover{
+    border: 2px solid rgb(71,71,71);
+    box-shadow: 0px 0px 10px white, inset 0px 0px 10px white;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.perso .left{
+    height: 100%;
+    width: 90px;
+    background-color: #0d1925;
+
+}
+
+.menu:nth-child(1) .perso .left {
+    background-image: url("/MonsterHigh/images/iimg1-re.png");
     background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center center;
+}
+
+.menu:nth-child(2) .perso .left {
+    background-image: url("/MonsterHigh/images/monster2.png");
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center center;
+}
+
+.menu:nth-child(3) .perso .left {
+    background-image: url("/MonsterHigh/images/monster4.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center center;
+}
+
+.menu:nth-child(4) .perso .left {
+    background-image: url("/MonsterHigh/images/monter1.png");
+    background-repeat: no-repeat;
+    background-size: 95%;
+    background-position: center center;
 }
 
 .perso .right h1{
-    font-size: 95%;
+    font-size: 1em;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.perso-bg{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 25%;
+}
+
+.perso-bg img{
+  display: none;
+}
+
+.active .perso-bg img{
+    display: flex;
+}
+
+button{
+    background-color: gray;
+    width: 7%;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    height: 10%;
+}
+
+button:hover{
+    border: 2px solid rgb(71,71,71);
+    box-shadow: 0px 0px 10px white, inset 0px 0px 10px white;
+    background-color: green;
+    transition: 0.2s;
+    cursor: pointer;
 }

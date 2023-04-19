@@ -23,7 +23,6 @@
 /************************************************************/
 
 // variables globales décrivant l'état du monstre
-let name = prompt("Comment va s'appeler le monstre : ");
 let life = prompt("De combien de vie dispose t-il au départ : ");
 if(life == 0)
 {

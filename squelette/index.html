@@ -7,16 +7,65 @@
     <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
-  <div class="content">
-    <div class="menu">
-        <div class="perso">
-            <div class="left"></div>
-            <div class="right">
-                <h1>Monstre 1</h1>
+    <div class="content">
+        <!--classe menu qui contient deux élements, à gauche le vrai menu et à droite le personnage
+        quand on va cliquer sur un personnage, ça va cacher les autres img-->
+        <div class="menu active">
+            <div class="perso">
+                <div class="left"></div>
+                <div class="right">
+                    <h1 class="tit">Warpface</h1>
+                </div>
+            </div>
+            <div class="perso-bg">
+                <img src="/MonsterHigh/images/iimg1-re.png" height="70%">
             </div>
         </div>
-        <div class="perso-bkgrd"></div>
+
+        <div class="menu">
+            <div class="perso">
+                <div class="left"></div>
+                <div class="right">
+                    <h1 class="tit">Venomwings</h1>
+                </div>
+            </div>
+            <div class="perso-bg">
+                <img src="/MonsterHigh/images/monster2.png" height="75%">
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="perso">
+                <div class="left"></div>
+                <div class="right">
+                    <h1 class="tit">Shrek le joyeux</h1>
+                </div>
+            </div>
+            <div class="perso-bg">
+                <img src="/MonsterHigh/images/monster4.png" height="60%">
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="perso">
+                <div class="left"></div>
+                <div class="right">
+                    <h1 class="tit">Hauntfreak</h1>
+                </div>
+            </div>
+            <div class="perso-bg">
+                <img src="/MonsterHigh/images/monter1.png" height="80%">
+            </div>
+        </div>
+        <a href="monster.html"> <button>Jouer</button></a>
     </div>
-  </div>
+    <!--Quand on click sur un menu: un element qui a la class menu, on va ajouter a cet element la class active et on va le retirer aux autres élements-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).on("click", ".menu", function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+
 </body>
 </html>
